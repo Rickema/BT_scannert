@@ -1,0 +1,6 @@
+{
+  "name": "iTAG Scanner",
+  "description": "BLE and Classic Bluetooth scanner and tracker with Bluetooth SIG device fingerprinting and proximity detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

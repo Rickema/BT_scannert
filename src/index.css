@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #3F51B5;
+  --color-primary-dark: #303F9F;
+  --color-accent: #FF4081;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #FAFAFA;
+  color: #212121;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Material design button styling */
+.android-btn {
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.12);
+  transition: background-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.android-btn:hover:not(:disabled) {
+  background-color: #303F9F;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.android-btn:active:not(:disabled) {
+  background-color: #283593;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.android-btn:disabled {
+  background-color: #BDBDBD;
+  color: #757575;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.android-btn-secondary {
+  background-color: #757575;
+}
+
+.android-btn-secondary:hover:not(:disabled) {
+  background-color: #616161;
+}
+
+.android-btn-accent {
+  background-color: #FF4081;
+}
+
+.android-btn-accent:hover:not(:disabled) {
+  background-color: #F50057;
+}
+
+/* Android SeekBar Custom styling */
+input[type="range"] {
+  accent-color: #3F51B5;
+}
+
+/* Custom Scrollbar for Monospace Debug area */
+.debug-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.debug-scroll::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+  border-radius: 3px;
+}
